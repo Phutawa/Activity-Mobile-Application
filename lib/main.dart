@@ -65,7 +65,16 @@ class _MyHomePageState extends State<MyHomePage> {
             children: [
               Text(
                 "Hello Flutter",
-                style: TextStyle(fontFamily: 'maa', fontSize: 24),
+                style: TextStyle(
+                  fontFamily: 'maa',
+                  fontSize: 50,
+                  fontStyle: FontStyle.italic,
+                  color: Colors.blue,
+                  fontWeight: FontWeight.bold,
+                  background: Paint()
+                    ..color = const Color.fromARGB(255, 250, 186, 112)
+                    ..style = PaintingStyle.fill,
+                ),
               ),
               priceTextField(),
               amountTextField(),
